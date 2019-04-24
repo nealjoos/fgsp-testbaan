@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leerlingen FGSP">
+    <meta name="description" content="Besturing van de testbaan in het kader van het FGSP Project.">
+    <title>FGSP Testbaan</title>
+    <script src="jquery.js"></script>
+    <script src="slider.js"></script>
+    <script src="rotate.js"></script>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="message"><h1>Testbaan besturing</h1></div>
+<div class="drawing">
+    <div class="arrow" id="AS1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+    <div class="arrow" id="AS2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+    <div class="arrow" id="AS3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+    <div class="arrow" id="AS4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+    <div class="arrow" id="AS5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+    <div class="arrow" id="AS6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36" viewBox="0 0 36 36"><title>Richtingspijl</title>
+            <path class="arrowpath" d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+        </svg>
+    </div>
+
+    <svg id="Testbaan" data-name="Testbaan" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 805 325">
+        <title>SVG Testbaan</title>
+        <path class="tbpath sectie5"
+              d="M160-.09,148,.34m0,0L136.16,1.69m0,0L124.4,3.92m0,0L112.84,7m0,0-11.29,4m0,0-11,4.78m0,0L80,21.34m0,0L69.86,27.7m0,0-9.62,7.12m0,0-9.08,7.79m0,0L42.7,51.07m0,0-7.79,9.08m0,0-7.12,9.62m0,0L21.43,79.89m0,0L15.85,90.47m0,0-4.79,11m0,0L7.11,112.75m0,0L4,124.31m0,0L1.78,136.05m0,0L.46,148m0,0L0,159.9m0,0,.46,12m0,0,1.32,11.88m0,0L4,195.51m0,0,3.1,11.56m0,0,4,11.29m0,0,4.79,11m0,0,5.58,10.58m0,0L27.79,250m0,0,7.12,9.62m0,0,7.79,9.07m0,0,8.46,8.46m0,0L60.24,285m0,0,9.62,7.09m0,0L80,298.45m0,0,10.58,5.61m0,0,11,4.79m0,0,11.29,3.94m0,0,11.56,3.11m0,0,11.76,2.21m0,0L148,319.45m0,0,12,.46"
+              transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie3" d="M160-.09H400" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4" d="M400,106.57H352" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4" d="M352,106.57H336" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4"
+              d="M160-.09l7.14,11.33m0,0L175,22.12m0,0,8.48,10.37m0,0,9.12,9.83m0,0,9.69,9.25m0,0,10.26,8.62m0,0,10.76,8m0,0,11.24,7.3m0,0,11.67,6.59m0,0,12.06,5.86m0,0L270.63,93m0,0,12.7,4.31m0,0,12.93,3.54m0,0,13.11,2.71m0,0,13.27,1.92m0,0L336,106.57"
+              transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie6"
+              d="M640,319.91l12-.46m0,0,11.88-1.34m0,0,11.76-2.21m0,0,11.56-3.11m0,0,11.29-3.94m0,0,11-4.79m0,0L720,298.45m0,0,10.12-6.36m0,0,9.64-7.09m0,0,9-7.82m0,0,8.46-8.46m0,0,7.82-9.07m0,0,7.09-9.62m0,0,6.39-10.13m0,0,5.58-10.58m0,0,4.79-11m0,0,3.95-11.29m0,0,3.1-11.56m0,0,2.21-11.76m0,0,1.34-11.88m0,0,.46-12m0,0-.46-12m0,0-1.34-11.9m0,0L796,124.31m0,0-3.1-11.56m0,0-3.95-11.31m0,0-4.79-11m0,0-5.58-10.58m0,0-6.39-10.12m0,0-7.09-9.62m0,0-7.82-9.08m0,0-8.46-8.46m0,0-9-7.79m0,0-9.64-7.12m0,0L720,21.34m0,0-10.58-5.59m0,0-11-4.78m0,0L687.16,7m0,0L675.6,3.92m0,0L663.84,1.69m0,0L652,.34m0,0L640-.09"
+              transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie3" d="M640-.09H400" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4" d="M400,106.57h48" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4" d="M448,106.57h16" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie4"
+              d="M464,106.57l13.36-1.07m0,0,13.27-1.92m0,0,13.11-2.71m0,0,12.93-3.54m0,0L529.37,93m0,0,12.38-5.1m0,0,12.06-5.86m0,0,11.67-6.59m0,0,11.24-7.3m0,0,10.76-8m0,0,10.26-8.62m0,0,9.69-9.25m0,0,9.12-9.83m0,0L625,22.12m0,0,7.82-10.88m0,0L640-.09"
+              transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie1" d="M160,319.91H400" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2" d="M400,213.23H352" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2" d="M352,213.23H336" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2"
+              d="M336,213.23l-13.36,1.09m0,0-13.27,1.89m0,0-13.11,2.72m0,0-12.93,3.53m0,0-12.7,4.33m0,0-12.38,5.09m0,0-12.06,5.86m0,0-11.67,6.59m0,0-11.24,7.29m0,0-10.76,8m0,0-10.26,8.62m0,0-9.69,9.26m0,0-9.12,9.82m0,0L175,297.68m0,0-7.82,10.87m0,0L160,319.91"
+              transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie1" d="M640,319.91H400" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2" d="M400,213.23h48" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2" d="M448,213.23h16" transform="translate(0.25 0.34)"/>
+        <path class="tbpath sectie2"
+              d="M640,319.91l-7.14-11.36m0,0L625,297.68m0,0-8.48-10.38m0,0-9.12-9.82m0,0-9.69-9.26m0,0-10.26-8.62m0,0-10.76-8m0,0-11.24-7.29m0,0-11.67-6.59m0,0-12.06-5.86m0,0-12.38-5.09m0,0-12.7-4.33m0,0-12.93-3.53m0,0-13.11-2.72m0,0-13.27-1.89m0,0L464,213.23"
+              transform="translate(0.25 0.34)"/>
+    </svg>
+</div>
+<div class="control">
+    <form method="get" action="/submit" id="form">
+        <div class="speedcontrol">
+            <div class="speedslider">
+                <br>
+                <label>Snelheid spoor 1</label><br>
+                <input type="range" id="SS1In" name="SS1" value="0" onchange="this.form.submit()">
+                <output id="SS1Out"></output>
+            </div>
+            <br><br>
+            <div class="speedslider">
+                <br>
+                <label>Snelheid zijspoor 1</label><br>
+                <input type="range" id="SS2In" name="SS2" value="0" onchange="this.form.submit()">
+                <output id="SS2Out"></output>
+            </div>
+            <br><br>
+            <div class="speedslider">
+                <br>
+                <label>Snelheid spoor 2</label><br>
+                <input type="range" id="SS3In" name="SS3" value="0" onchange="this.form.submit()">
+                <output id="SS3Out"></output>
+            </div>
+            <br><br>
+            <div class="speedslider">
+                <br>
+                <label>Snelheid zijspoor 2</label><br>
+                <input type="range" id="SS4In" name="SS4" value="0" onchange="this.form.submit()">
+                <output id="SS4Out"></output>
+            </div>
+            <br><br>
+            <div class="speedslider">
+                <br>
+                <label>Snelheid links</label><br>
+                <input type="range" id="SS5In" name="SS5" value="0" onchange="this.form.submit()">
+                <output id="SS5Out"></output>
+            </div>
+            <br><br>
+            <div class="speedslider">
+                <br>
+                <label>Snelheid rechts</label><br>
+                <input type="range" id="SS6In" name="SS6" value="0" onchange="this.form.submit()">
+                <output id="SS6Out"></output>
+            </div>
+        </div>
+        <div class="variousfunctions">
+            <div class="goto">
+                <label>Ga van</label>
+                <select name="start" id="start" required>
+                    <option value="" selected disabled hidden>Selecteer een spoor</option>
+                    <option value="Spoor1">spoor 1</option>
+                    <option value="ZijSpoor1">zijspoor 1</option>
+                    <option value="Spoor2">spoor 2</option>
+                    <option value="ZijSpoor2">zijspoor 2</option>
+                </select>
+                <label>naar</label>
+                <select name="stop" id="stop" required>
+                    <option value="" selected disabled hidden>Selecteer een spoor</option>
+                    <option value="Spoor1">spoor 1</option>
+                    <option value="ZijSpoor1">zijspoor 1</option>
+                    <option value="Spoor2">spoor 2</option>
+                    <option value="ZijSpoor2">zijspoor 2</option>
+                </select>
+                <label>in</label>
+                <select name="richting" id="richting" required>
+                    <option value="" selected disabled hidden>Selecteer een richting</option>
+                    <option value="CW">wijzerzin</option>
+                    <option value="CCW">tegenwijzerzin</option>
+                </select>
+                <button class="gobtn" type="button" onclick="submitCheck()">Go!</button>
+            </div>
+            &nbsp;
+    </form>
+    <div class="emergencystop">
+        <form method="get" action="/submit">
+            <button class="emstopbtn" name="emergencystop" value="1" onclick="this.form.submit()"><label><b>NOODSTOP</b></label>
+            </button>
+        </form>
+    </div>
+    <p><a href="credits.html">Benieuwd wie hier allemaal aan meewerkte?</a></p>
+</div>
+</div>
+<script>
+    console.log("Gemaakt door leerlingen FGSP project. http://lln.ptieeklo.be/");
+    var slider1 = document.getElementById("SS1In"); //spoor1
+    var output1 = document.getElementById("SS1Out");
+    var slider2 = document.getElementById("SS2In"); //zijspoor 1
+    var output2 = document.getElementById("SS2Out");
+    var slider3 = document.getElementById("SS3In"); //spoor2
+    var output3 = document.getElementById("SS3Out");
+    var slider4 = document.getElementById("SS4In"); //zijspoor 2
+    var output4 = document.getElementById("SS4Out");
+    var slider5 = document.getElementById("SS5In"); //links
+    var output5 = document.getElementById("SS5Out");
+    var slider6 = document.getElementById("SS6In"); //rechts
+    var output6 = document.getElementById("SS6Out");
+    output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
+
+    // Update elke keer dat het verzet wordt de waarde
+    slider1.oninput = function () {
+        output1.innerHTML = this.value;
+    };
+    output2.innerHTML = slider2.value;
+    slider2.oninput = function () {
+        output2.innerHTML = this.value;
+    };
+    output3.innerHTML = slider3.value;
+    slider3.oninput = function () {
+        output3.innerHTML = this.value;
+    };
+    output4.innerHTML = slider4.value;
+    slider4.oninput = function () {
+        output4.innerHTML = this.value;
+    };
+    output5.innerHTML = slider5.value;
+    slider5.oninput = function () {
+        output5.innerHTML = this.value;
+    };
+    output6.innerHTML = slider6.value;
+    slider6.oninput = function () {
+        output6.innerHTML = this.value;
+    };
+    $("#SS1In").rangeslider({
+        polyfill: false,
+    });
+    $("#SS2In").rangeslider({
+        polyfill: false,
+    });
+    $("#SS3In").rangeslider({
+        polyfill: false,
+    });
+    $("#SS4In").rangeslider({
+        polyfill: false,
+    });
+    $("#SS5In").rangeslider({
+        polyfill: false,
+    });
+    $("#SS6In").rangeslider({
+        polyfill: false,
+    });
+
+    function submitCheck() {
+        var richting = document.getElementById("richting").value;
+        var start = document.getElementById("start").value;
+        var stop = document.getElementById("stop").value;
+        if (richting === 'CCW') {
+            document.getElementById('AS1').style.transform = 'rotate(180deg)';
+            document.getElementById('AS2').style.transform = "rotate(180deg)";
+            document.getElementById('AS3').style.transform = "rotate(0deg)";
+            document.getElementById('AS4').style.transform = "rotate(0deg)";
+            document.getElementById('AS5').style.transform = 'rotate(-90deg)';
+            document.getElementById('AS6').style.transform = "rotate(90deg)";
+            document.getElementById("form").submit();
+        }
+        else if (richting === 'CW') {
+            document.getElementById('AS1').style.transform = 'rotate(0deg)';
+            document.getElementById('AS2').style.transform = "rotate(0deg)";
+            document.getElementById('AS3').style.transform = "rotate(180deg)";
+            document.getElementById('AS4').style.transform = "rotate(180deg)";
+            document.getElementById('AS5').style.transform = 'rotate(90deg)';
+            document.getElementById('AS6').style.transform = "rotate(-90deg)";
+            document.getElementById("form").submit();
+        }
+        if (start === 'Spoor1' && stop === 'Spoor1') {
+            document.getElementsByClassName('sectie1').style.stroke = '#960A0A';
+            document.getElementsByClassName('sectie3').style.stroke = '#960A0A';
+            document.getElementsByClassName('sectie5').style.stroke = '#960A0A';
+            document.getElementsByClassName('sectie6').style.stroke = '#960A0A';
+        }
+    }
+</script>
+</body>
+</html>

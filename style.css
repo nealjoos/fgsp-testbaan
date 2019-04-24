@@ -1,0 +1,153 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #dddddd;
+}
+
+.tbpath {
+    fill: none;
+    stroke-width: 3px;
+}
+
+.arrowpath {
+    fill: #cecece;
+    stroke-width: 1.5px;
+    stroke: black;
+    transform: scale(1.5);
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 36px;
+    padding: 0;
+}
+
+#AS1 { /*spoor1*/
+    left: 50%;
+    top: 93%;
+}
+
+#AS2 { /*zijspoor1*/
+    left: 50%;
+    top: 61%;
+}
+
+#AS3 { /*spoor2*/
+    left: 50%;
+    top: -3.5%;
+    transform: rotate(180deg);
+}
+
+#AS4 { /*zijspoor2*/
+    left: 50%;
+    top: 29%;
+    transform: rotate(180deg);
+}
+
+#AS5 { /*links*/
+    left: -1%;
+    top: 45%;
+    transform: rotate(90deg);
+}
+
+#AS6 { /*rechts*/
+    left: 98.25%;
+    top: 45%;
+    transform: rotate(-90deg);
+}
+
+.sectie1 {
+    stroke: #4BD13C;
+}
+
+.sectie2 {
+    stroke: #4BD13C;
+}
+
+.sectie3 {
+    stroke: #4BD13C;
+}
+
+.sectie4 {
+    stroke: #4BD13C;
+}
+
+.sectie5 {
+    stroke: #4BD13C;
+}
+
+.sectie6 {
+    stroke: #4BD13C;
+}
+
+.message {
+    text-align: center;
+}
+
+.speedcontrol {
+    display: inline-block;
+    width: 40%;
+    margin: 0.5em;
+    float: left;
+}
+
+.variousfunctions {
+    display: inline-block;
+    width: 40%;
+    margin: 0.5em;
+    float: right;
+}
+
+.rangeslider {
+    width: 75%;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+    float: left;
+}
+
+.drawing {
+    margin: 2em auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+}
+
+output {
+    padding-left: 0.25em;
+    padding-top: 0.875em;
+    float: left;
+}
+
+.emstopbtn {
+    background: gray;
+    border: 3px solid #4E4F4E;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10em;
+    width: 10em;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: black;
+}
+
+.emstopbtn:hover {
+    background: #960A0A;
+    color: white;
+}
+
+.status {
+    height: 15px;
+    width: 15px;
+    background-color: #FF8C00;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 5px;
+}
