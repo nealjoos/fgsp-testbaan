@@ -218,32 +218,32 @@
     // Update elke keer dat het verzet wordt de waarde
     slider1.oninput = function () {
         output1.innerHTML = this.value;
-        Cookies.set('SS1', 'output1');
+        document.cookie = "SS1=output1";
     };
     output2.innerHTML = slider2.value;
     slider2.oninput = function () {
         output2.innerHTML = this.value;
-        Cookies.set('SS2', 'output2');
+        document.cookie = "SS2=output2";
     };
     output3.innerHTML = slider3.value;
     slider3.oninput = function () {
         output3.innerHTML = this.value;
-        Cookies.set('SS3', 'output3');
+        document.cookie = "SS3=output3";
     };
     output4.innerHTML = slider4.value;
     slider4.oninput = function () {
         output4.innerHTML = this.value;
-        Cookies.set('SS4', 'output4');
+        document.cookie = "SS4=output4";
     };
     output5.innerHTML = slider5.value;
     slider5.oninput = function () {
         output5.innerHTML = this.value;
-        Cookies.set('SS5', 'output5');
+        document.cookie = "SS5=output5";
     };
     output6.innerHTML = slider6.value;
     slider6.oninput = function () {
         output6.innerHTML = this.value;
-        Cookies.set('SS6', 'output6');
+        document.cookie = "SS6=output6";
     };
     $("#SS1In").rangeslider({
         polyfill: false,
