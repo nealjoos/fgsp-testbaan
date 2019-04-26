@@ -9,6 +9,35 @@
     <script src="jquery.js"></script>
     <script src="slider.js"></script>
     <script src="rotate.js"></script>
+    <script>    function submitCheck() {
+            var richting = document.getElementById("richting").value;
+            var start = document.getElementById("start").value;
+            var stop = document.getElementById("stop").value;
+            if (richting === 'CCW') {
+                document.getElementById('AS1').style.transform = 'rotate(180deg)';
+                document.getElementById('AS2').style.transform = "rotate(180deg)";
+                document.getElementById('AS3').style.transform = "rotate(0deg)";
+                document.getElementById('AS4').style.transform = "rotate(0deg)";
+                document.getElementById('AS5').style.transform = 'rotate(-90deg)';
+                document.getElementById('AS6').style.transform = "rotate(90deg)";
+                document.getElementById("form").submit();
+            }
+            else if (richting === 'CW') {
+                document.getElementById('AS1').style.transform = 'rotate(0deg)';
+                document.getElementById('AS2').style.transform = "rotate(0deg)";
+                document.getElementById('AS3').style.transform = "rotate(180deg)";
+                document.getElementById('AS4').style.transform = "rotate(180deg)";
+                document.getElementById('AS5').style.transform = 'rotate(90deg)';
+                document.getElementById('AS6').style.transform = "rotate(-90deg)";
+                document.getElementById("form").submit();
+            }
+            if (start === 'Spoor1' && stop === 'Spoor1') {
+                document.getElementsByClassName('sectie1').style.stroke = '#960A0A';
+                document.getElementsByClassName('sectie3').style.stroke = '#960A0A';
+                document.getElementsByClassName('sectie5').style.stroke = '#960A0A';
+                document.getElementsByClassName('sectie6').style.stroke = '#960A0A';
+            }
+        }</script>
     <link rel="stylesheet" type="text/css" href="slider.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -244,36 +273,6 @@
     $("#SS6In").rangeslider({
         polyfill: false,
     });
-
-    function submitCheck() {
-        var richting = document.getElementById("richting").value;
-        var start = document.getElementById("start").value;
-        var stop = document.getElementById("stop").value;
-        if (richting === 'CCW') {
-            document.getElementById('AS1').style.transform = 'rotate(180deg)';
-            document.getElementById('AS2').style.transform = "rotate(180deg)";
-            document.getElementById('AS3').style.transform = "rotate(0deg)";
-            document.getElementById('AS4').style.transform = "rotate(0deg)";
-            document.getElementById('AS5').style.transform = 'rotate(-90deg)';
-            document.getElementById('AS6').style.transform = "rotate(90deg)";
-            document.getElementById("form").submit();
-        }
-        else if (richting === 'CW') {
-            document.getElementById('AS1').style.transform = 'rotate(0deg)';
-            document.getElementById('AS2').style.transform = "rotate(0deg)";
-            document.getElementById('AS3').style.transform = "rotate(180deg)";
-            document.getElementById('AS4').style.transform = "rotate(180deg)";
-            document.getElementById('AS5').style.transform = 'rotate(90deg)';
-            document.getElementById('AS6').style.transform = "rotate(-90deg)";
-            document.getElementById("form").submit();
-        }
-        if (start === 'Spoor1' && stop === 'Spoor1') {
-            document.getElementsByClassName('sectie1').style.stroke = '#960A0A';
-            document.getElementsByClassName('sectie3').style.stroke = '#960A0A';
-            document.getElementsByClassName('sectie5').style.stroke = '#960A0A';
-            document.getElementsByClassName('sectie6').style.stroke = '#960A0A';
-        }
-    }
 </script>
 </body>
 </html>
