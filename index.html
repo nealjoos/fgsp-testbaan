@@ -190,7 +190,7 @@
                 <select name="richting" id="richting" required>
                     <option value="" selected disabled hidden>Selecteer een richting</option>
                     <option value="CW">wijzerzin</option>
-                    <option value="CCW">tegenwijzerzin</option>
+                    <option value="CCW" disabled>tegenwijzerzin</option>
                 </select>
                 <button class="gobtn" type="button" onclick="submitCheck()">Go!</button>
             </div>
@@ -227,14 +227,7 @@
     document.getElementById('SS4In').value=getCookie("SS4");
     document.getElementById('SS5In').value=getCookie("SS5");
     document.getElementById('SS6In').value=getCookie("SS6");
-    /*
-    $("#SS1ln").val("output1");
-    $("#SS2ln").val("output2");
-    $("#SS3ln").val("output3");
-    $("#SS4ln").val("output4");
-    $("#SS5ln").val("output5");
-    $("#SS6ln").val("output6");
-*/
+
     // Update elke keer dat het verzet wordt de waarde
     output1.innerHTML = getCookie("SS1"); // Geef de standaard waarde weer wanneer de pagina laad
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
