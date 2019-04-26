@@ -39,6 +39,19 @@
                 document.getElementsByClassName('sectie6').style.stroke = '#960A0A';
             }
         }</script>
+        <script type="text/javascript">
+
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  function getCookie(name)
+  {
+    var re = new RegExp(name + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+  }
+
+</script>
     <link rel="stylesheet" type="text/css" href="slider.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -216,11 +229,11 @@
     $("#SS6ln").val("output6");
 
     // Update elke keer dat het verzet wordt de waarde
-    output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
+    output1.innerHTML = getCookie("SS1"); // Geef de standaard waarde weer wanneer de pagina laad
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
-        //output1.innerHTML = this.value;
         output1 = this.value;
         document.cookie = 'SS1='+output1+';'
+        output1.innerHTML = getCookie("SS1");
         this.form.submit();
     };
     output2.innerHTML = slider2.value;
