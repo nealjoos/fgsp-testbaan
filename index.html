@@ -244,32 +244,32 @@
     };
     output2.innerHTML = getCookie("SS2");
     slider2.onchange = function () {
-        output2.innerHTML = this.value;
         output2 = this.value;
+        document.cookie = 'SS2='+output2+';'
         this.form.submit();
     };
     output3.innerHTML = getCookie("SS3");
     slider3.onchange = function () {
-        output3.innerHTML = this.value;
         output3 = this.value;
+        document.cookie = 'SS3='+output3+';'
         this.form.submit();
     };
     output4.innerHTML = getCookie("SS4");
     slider4.onchange = function () {
-        output4.innerHTML = this.value;
         output4 = this.value;
+        document.cookie = 'SS4='+output4+';'
         this.form.submit();
     };
     output5.innerHTML = getCookie("SS5");
     slider5.onchange = function () {
-        output5.innerHTML = this.value;
         output5 = this.value;
+        document.cookie = 'SS5='+output5+';'
         this.form.submit();
     };
     output6.innerHTML = getCookie("SS6");
     slider6.onchange = function () {
-        output6.innerHTML = this.value;
         output6 = this.value;
+        document.cookie = 'SS6='+output6+';'
         this.form.submit();
     };
     $("#SS1In").rangeslider({
