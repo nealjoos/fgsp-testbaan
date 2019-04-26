@@ -220,7 +220,7 @@
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
         //output1.innerHTML = this.value;
         output1 = this.value;
-        document.cookie = "SS1='+output1+'";
+        document.cookie = "SS1="+output1+";
 
     };
     output2.innerHTML = slider2.value;
