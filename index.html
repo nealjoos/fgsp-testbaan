@@ -215,38 +215,48 @@
     $("#SS5ln").val("output5");
     $("#SS6ln").val("output6");
 
-    output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
     // Update elke keer dat het verzet wordt de waarde
+    output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
         //output1.innerHTML = this.value;
         output1 = this.value;
         document.cookie = 'SS1='+output1+';'
-
+        this.form.submit();
     };
     output2.innerHTML = slider2.value;
     slider2.oninput = function () {
         output2.innerHTML = this.value;
-        document.cookie = "SS2=output2";
+        output2 = this.value;
+        document.cookie = 'SS2='+output2+';'
+        this.form.submit();
     };
     output3.innerHTML = slider3.value;
     slider3.oninput = function () {
         output3.innerHTML = this.value;
-        document.cookie = "SS3=output3";
+        output3 = this.value;
+        document.cookie = 'SS3='+output3+';'
+        this.form.submit();
     };
     output4.innerHTML = slider4.value;
     slider4.oninput = function () {
         output4.innerHTML = this.value;
-        document.cookie = "SS4=output4";
+        output4 = this.value;
+        document.cookie = 'SS4='+output4+';'
+        this.form.submit();
     };
     output5.innerHTML = slider5.value;
     slider5.oninput = function () {
         output5.innerHTML = this.value;
-        document.cookie = "SS5=output5";
+        output5 = this.value;
+        document.cookie = 'SS5='+output5+';'
+        this.form.submit();
     };
     output6.innerHTML = slider6.value;
     slider6.oninput = function () {
         output6.innerHTML = this.value;
-        document.cookie = "SS6=output6";
+        output6 = this.value;
+        document.cookie = 'SS6='+output6+';'
+        this.form.submit();
     };
     $("#SS1In").rangeslider({
         polyfill: false,
