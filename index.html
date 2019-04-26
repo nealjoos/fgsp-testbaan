@@ -9,7 +9,8 @@
     <script src="jquery.js"></script>
     <script src="slider.js"></script>
     <script src="rotate.js"></script>
-    <script>    function submitCheck() {
+    <script>
+    function submitCheck() {
             var richting = document.getElementById("richting").value;
             var start = document.getElementById("start").value;
             var stop = document.getElementById("stop").value;
@@ -115,7 +116,7 @@
             <div class="speedslider">
                 <br>
                 <label>Snelheid spoor 1</label><br>
-                <input type="range" id="SS1In" name="SS1" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS1In" name="SS1" value="0" onchange="this.form.submit();">
                 <output id="SS1Out"></output>
             </div>
             <br><br>
@@ -194,8 +195,6 @@
 <script>
     console.log("Gemaakt door leerlingen FGSP project. http://lln.ptieeklo.be/");
 
-document.cookie = "username=John Doe";
-
     var slider1 = document.getElementById("SS1In"); //spoor1
     var output1 = document.getElementById("SS1Out");
     var slider2 = document.getElementById("SS2In"); //zijspoor 1
@@ -216,12 +215,13 @@ document.cookie = "username=John Doe";
     $("#SS5ln").val("output5");
     $("#SS6ln").val("output6");
 
-  //  output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
-
+    output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
     // Update elke keer dat het verzet wordt de waarde
-    slider1.oninput = function () {
-        output1.innerHTML = this.value;
-        document.cookie = "SS1=output1";
+    slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
+        //output1.innerHTML = this.value;
+        output1 = this.value;
+        document.cookie = "SS1='+output1+'";
+
     };
     output2.innerHTML = slider2.value;
     slider2.oninput = function () {
