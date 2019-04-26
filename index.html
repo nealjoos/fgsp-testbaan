@@ -116,42 +116,42 @@
             <div class="speedslider">
                 <br>
                 <label>Snelheid spoor 1</label><br>
-                <input type="range" id="SS1In" name="SS1" value="0" onchange="this.form.submit();">
+                <input type="range" id="SS1In" name="SS1" value="0">
                 <output id="SS1Out"></output>
             </div>
             <br><br>
             <div class="speedslider">
                 <br>
                 <label>Snelheid zijspoor 1</label><br>
-                <input type="range" id="SS2In" name="SS2" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS2In" name="SS2" value="0">
                 <output id="SS2Out"></output>
             </div>
             <br><br>
             <div class="speedslider">
                 <br>
                 <label>Snelheid spoor 2</label><br>
-                <input type="range" id="SS3In" name="SS3" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS3In" name="SS3" value="0">
                 <output id="SS3Out"></output>
             </div>
             <br><br>
             <div class="speedslider">
                 <br>
                 <label>Snelheid zijspoor 2</label><br>
-                <input type="range" id="SS4In" name="SS4" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS4In" name="SS4" value="0">
                 <output id="SS4Out"></output>
             </div>
             <br><br>
             <div class="speedslider">
                 <br>
                 <label>Snelheid links</label><br>
-                <input type="range" id="SS5In" name="SS5" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS5In" name="SS5" value="0">
                 <output id="SS5Out"></output>
             </div>
             <br><br>
             <div class="speedslider">
                 <br>
                 <label>Snelheid rechts</label><br>
-                <input type="range" id="SS6In" name="SS6" value="0" onchange="this.form.submit()">
+                <input type="range" id="SS6In" name="SS6" value="0">
                 <output id="SS6Out"></output>
             </div>
         </div>
@@ -224,35 +224,35 @@
         this.form.submit();
     };
     output2.innerHTML = slider2.value;
-    slider2.oninput = function () {
+    slider2.onchange = function () {
         output2.innerHTML = this.value;
         output2 = this.value;
         document.cookie = 'SS2='+output2+';'
         this.form.submit();
     };
     output3.innerHTML = slider3.value;
-    slider3.oninput = function () {
+    slider3.onchange = function () {
         output3.innerHTML = this.value;
         output3 = this.value;
         document.cookie = 'SS3='+output3+';'
         this.form.submit();
     };
     output4.innerHTML = slider4.value;
-    slider4.oninput = function () {
+    slider4.onchange = function () {
         output4.innerHTML = this.value;
         output4 = this.value;
         document.cookie = 'SS4='+output4+';'
         this.form.submit();
     };
     output5.innerHTML = slider5.value;
-    slider5.oninput = function () {
+    slider5.onchange = function () {
         output5.innerHTML = this.value;
         output5 = this.value;
         document.cookie = 'SS5='+output5+';'
         this.form.submit();
     };
     output6.innerHTML = slider6.value;
-    slider6.oninput = function () {
+    slider6.onchange = function () {
         output6.innerHTML = this.value;
         output6 = this.value;
         document.cookie = 'SS6='+output6+';'
