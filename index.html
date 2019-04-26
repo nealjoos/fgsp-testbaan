@@ -221,15 +221,23 @@
     var slider6 = document.getElementById("SS6In"); //rechts
     var output6 = document.getElementById("SS6Out");
 
+
+    document.getElementById('SS2In').value=getCookie("SS2");
+    document.getElementById('SS3In').value=getCookie("SS3");
+    document.getElementById('SS4In').value=getCookie("SS4");
+    document.getElementById('SS5In').value=getCookie("SS5");
+    document.getElementById('SS6In').value=getCookie("SS6");
+    /*
     $("#SS1ln").val("output1");
     $("#SS2ln").val("output2");
     $("#SS3ln").val("output3");
     $("#SS4ln").val("output4");
     $("#SS5ln").val("output5");
     $("#SS6ln").val("output6");
-
+*/
     // Update elke keer dat het verzet wordt de waarde
     output1.innerHTML = getCookie("SS1"); // Geef de standaard waarde weer wanneer de pagina laad
+    document.getElementById('SS1In').value=getCookie("SS1"); // Geeft output weer in slider
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
         output1 = this.value;
         document.cookie = 'SS1='+output1+';'
