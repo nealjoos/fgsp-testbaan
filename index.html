@@ -177,12 +177,27 @@
     var slider6 = document.getElementById("SS6In"); //rechts
     var output6 = document.getElementById("SS6Out");
 
+    Cookies.set('SS1', 'output1');
+    Cookies.set('SS2', 'output2');
+    Cookies.set('SS3', 'output3');
+    Cookies.set('SS4', 'output4');
+    Cookies.set('SS5', 'output5');
+    Cookies.set('SS5', 'output5');
+
+    Cookies.get('SS1') => "output1";
+    Cookies.get('SS2') => "output2";
+    Cookies.get('SS3') => "output3";
+    Cookies.get('SS4') => "output4";
+    Cookies.get('SS5') => "output5";
+    Cookies.get('SS6') => "output6";
+
     $("#SS1ln").val("output1");
     $("#SS2ln").val("output2");
     $("#SS3ln").val("output3");
     $("#SS4ln").val("output4");
     $("#SS5ln").val("output5");
     $("#SS6ln").val("output6");
+
 
     output1.innerHTML = slider1.value; // Geef de standaard waarde weer wanneer de pagina laad
 
