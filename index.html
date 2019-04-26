@@ -221,7 +221,7 @@
     var slider6 = document.getElementById("SS6In"); //rechts
     var output6 = document.getElementById("SS6Out");
 
-
+    document.getElementById('SS1In').value=getCookie("SS1"); //Geeft cookiewaarde weer in slider
     document.getElementById('SS2In').value=getCookie("SS2");
     document.getElementById('SS3In').value=getCookie("SS3");
     document.getElementById('SS4In').value=getCookie("SS4");
@@ -237,46 +237,39 @@
 */
     // Update elke keer dat het verzet wordt de waarde
     output1.innerHTML = getCookie("SS1"); // Geef de standaard waarde weer wanneer de pagina laad
-    document.getElementById('SS1In').value=getCookie("SS1"); // Geeft output weer in slider
     slider1.onchange = function () { //als slider gewijzigd wordt past value aan en maakt cookie
         output1 = this.value;
         document.cookie = 'SS1='+output1+';'
-        output1.innerHTML = getCookie("SS1");
         this.form.submit();
     };
-    output2.innerHTML = slider2.value;
+    output2.innerHTML = getCookie("SS2");
     slider2.onchange = function () {
         output2.innerHTML = this.value;
         output2 = this.value;
-        document.cookie = 'SS2='+output2+';'
         this.form.submit();
     };
-    output3.innerHTML = slider3.value;
+    output3.innerHTML = getCookie("SS3");
     slider3.onchange = function () {
         output3.innerHTML = this.value;
         output3 = this.value;
-        document.cookie = 'SS3='+output3+';'
         this.form.submit();
     };
-    output4.innerHTML = slider4.value;
+    output4.innerHTML = getCookie("SS4");
     slider4.onchange = function () {
         output4.innerHTML = this.value;
         output4 = this.value;
-        document.cookie = 'SS4='+output4+';'
         this.form.submit();
     };
-    output5.innerHTML = slider5.value;
+    output5.innerHTML = getCookie("SS5");
     slider5.onchange = function () {
         output5.innerHTML = this.value;
         output5 = this.value;
-        document.cookie = 'SS5='+output5+';'
         this.form.submit();
     };
-    output6.innerHTML = slider6.value;
+    output6.innerHTML = getCookie("SS6");
     slider6.onchange = function () {
         output6.innerHTML = this.value;
         output6 = this.value;
-        document.cookie = 'SS6='+output6+';'
         this.form.submit();
     };
     $("#SS1In").rangeslider({
