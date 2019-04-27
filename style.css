@@ -8,6 +8,16 @@ html, body {
     background-color: #dddddd;
 }
 
+a {
+  color: #4286f4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4286f4;
+  text-decoration: none;
+}
+
 .tbpath {
     fill: none;
     stroke-width: 3px;
