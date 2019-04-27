@@ -9,13 +9,11 @@ html, body {
 }
 
 a {
-  color: #4286f4;
-  text-decoration: none;
+  color: #0041fc;
 }
 
 a:visited {
-  color: #4286f4;
-  text-decoration: none;
+  color: #0041fc;
 }
 
 .tbpath {
