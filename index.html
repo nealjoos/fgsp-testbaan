@@ -17,6 +17,17 @@
       document.cookie = 'richting=' + richtingvalue + ';'
       document.getElementById("form").submit();
     }
+    function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+     location.reload();
+}
   </script>
   <link rel="stylesheet" type="text/css" href="slider.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -178,6 +189,7 @@
       </form>
     </div>
     <p><a href="credits.html">Benieuwd wie hier allemaal aan meewerkte?</a></p>
+    <p style="font-size: 7px;"><a onclick="deleteAllCookies()" href="#">Cookies vervwijderen</a></p>
   </div>
   </div>
   <script>
