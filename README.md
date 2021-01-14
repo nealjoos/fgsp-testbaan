@@ -1,11 +1,10 @@
 <div align="center"><img src="http://lln.ptieeklo.be/assets/images/logo-142x128-70.jpg" alt="FGSP logo"/></div>
 
-# Testbaan
+# Project FGSP
 Welkom op de projectpagina omtrent de testbaan van het project FGSP. Het project FGSP is opgezet met als doel het station van Gent-Sint-Pieters in modelbouw na te bouwen zoals het in zijn nieuwe verbouwde fase zal zijn. Meer info omtrent het project is te vinden op onze [website](http://lln.ptieeklo.be/).
 
-Wil je onze besturing zien? [Klik hier!](https://nealjoos.github.io/fgsp-testbaan)
+## Web UI
+Deze Git bevat de web-gebaseerde gebruikersomgeving om de testbaan aan te sturen.
 
-## Doel
-Voor we beginnen met het echte werk testen we eerst al onze nieuwe onderdelen en de programmatie kleinschalig op onze testbaan. Deze bevat momenteel 4 wissels en 6 verschillende secties waarin de treinen met een verschillende snelheid en rijrichting aangestuurd kunnen worden. De positie wordt bepaald door 12 reed contacten. Dit alles is verbonden met een Arduino Mega en NodeMcu, die samen instaan voor de volledige controle van de testbaan.
-
-In deze repo worden de besturingsbestanden van de besturing geüpload en uitgetest voor ze op de NodeMcu terecht komen.
+## Arduino
+De sturing (Arduino based) is [hier](https://github.com/nealjoos/fgsp-arduino) te zien.
